@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://www.example.org/DEVSModeler" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <CoupledModelType xmi:id="_gib0ANCtEee6vaxiW3982w" modelName="top" defined="true" sourceFileRelativePath="spNoise.ma">
+    <coupledModels xmi:type="CoupledModelInstance" xmi:id="_gib0AdCtEee6vaxiW3982w" instanceName="spNoise">
+      <modelType xmi:type="CoupledModelType" xmi:id="_gib0AtCtEee6vaxiW3982w" modelName="spNoise"/>
+    </coupledModels>
+  </CoupledModelType>
+  <notation:Diagram xmi:id="_gillANCtEee6vaxiW3982w" type="DEVS" element="_gib0ANCtEee6vaxiW3982w" name="spNoise.madesigner" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_gillAdCtEee6vaxiW3982w"/>
+  </notation:Diagram>
+</xmi:XMI>

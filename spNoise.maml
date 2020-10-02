@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDPlusPlus_Builder_Version_1.0.0>
+  <top>
+    <components> spNoise&#xd;</components>
+  </top>
+  <spNoise>
+    <type> cell&#xd;</type>
+    <width> 30&#xd;</width>
+    <height> 30&#xd;</height>
+    <delay> transport&#xd;</delay>
+    <defaultDelayTime> 100&#xd;</defaultDelayTime>
+    <border> wrapped &#xd;</border>
+    <neighbors> spNoise(-1,-1) spNoise(-1,0) spNoise(-1,1) &#xd;</neighbors>
+    <neighbors> spNoise(0,-1)  spNoise(0,0)  spNoise(0,1)&#xd;</neighbors>
+    <neighbors> spNoise(1,-1)  spNoise(1,0)  spNoise(1,1)&#xd;</neighbors>
+    <initialvalue> 0&#xd;</initialvalue>
+    <InitialCellsValue> spNoise.val&#xd;</InitialCellsValue>
+    <localtransition> spNoise-rule&#xd;</localtransition>
+  </spNoise>
+  <spNoise-rule>
+    <rule> 0 100 { (0,0) = 1 and trueCount &lt; 2 } &#xd;</rule>
+    <rule> 1 100 { (0,0) = 1 and trueCount &gt; 2 } &#xd;</rule>
+    <rule> 1 100 { (0,0) = 0 and trueCount &gt; 7 }&#xd;</rule>
+    <rule> 0 100 { t }&#xd;</rule>
+  </spNoise-rule>
+</CDPlusPlus_Builder_Version_1.0.0>
